@@ -25,7 +25,7 @@ export const Email = () => {
         console.log(formData);
         try {
             const response = await axios.post(
-                "http://localhost:3001/send-email",
+                "https://portfolio-email-backend.vercel.app/",
                 formData
             );
             if (response.status === 200) alert("Email sent sucessfully!!!");
