@@ -7,7 +7,7 @@ export const Header = () => {
             >
                 <li className="hover:cursor-pointer">
                     <a
-                        className="visited:text-black no-underlink hover:text-black"
+                        className="text-black visited:text-black no-underline hover:text-black"
                         href="#works"
                     >
                         WORKS
@@ -15,7 +15,7 @@ export const Header = () => {
                 </li>
                 <li className="hover:cursor-pointer">
                     <a
-                        className="visited:text-black no-underlink hover:text-black"
+                        className="text-black visited:text-black no-underline hover:text-black"
                         href="#about"
                     >
                         ABOUT
@@ -23,7 +23,7 @@ export const Header = () => {
                 </li>
                 <li className="hover:cursor-pointer">
                     <a
-                        className="visited:text-black no-underlink hover:text-black"
+                        className=" text-black visited:text-black no-underline hover:text-black"
                         href="#testemonial"
                     >
                         TESTEMONIAL
@@ -31,7 +31,7 @@ export const Header = () => {
                 </li>
                 <li className="hover:cursor-pointer">
                     <a
-                        className="visited:text-black no-underlink hover:text-black"
+                        className="text-black visited:text-black no-underline hover:text-black"
                         href="#contact"
                     >
                         CONTACT
