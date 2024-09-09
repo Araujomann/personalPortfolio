@@ -4,16 +4,16 @@ import react from "../../assets/react.svg";
 export const About = () => {
     return (
         <div className="relative flex flex-col w-11/12 items-center bg-bege py-6 md:h-208 md:w-10/12">
-            <div>
-                <h1 className="relative -left-10 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
+            <div className="relative  w-full ">
+                <h1 className="relative left-2 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
                     APAIXONADO
                 </h1>
 
-                <h1 className="relative  -right-8 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
+                <h1 className="relative  left-12 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
                     PELO
                 </h1>
 
-                <h1 className="relative -right-14 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
+                <h1 className="relative left-20 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
                     {" "}
                     DESENVOLVIMENTO{" "}
                 </h1>

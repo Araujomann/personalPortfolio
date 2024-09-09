@@ -36,7 +36,7 @@ export const Email = () => {
     };
 
     return (
-        <div className=" flex flex-col place-content-center bg-gradient-to-t border gap-8 p-4 md:h-244">
+        <div className=" relative flex flex-col place-content-center bg-gradient-to-t border gap-8 p-4 md:h-244">
             <div className="flex flex-col font-sans md:mb-6 2xl:mt-8">
                 <h1 className="text-black text-4xl font-bold md:text-6xl 2xl:text-7xl">
                     Entre em contato
@@ -59,7 +59,7 @@ export const Email = () => {
                                 name="firstName"
                                 value={formData.firstName}
                                 onChange={handleChange}
-                                className="bg-white w-10/12 outline-none text-black ml-2 text-xl md:h-full"
+                                className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full"
                             />
                         </div>
                         <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 ">
@@ -70,7 +70,7 @@ export const Email = () => {
                                 name="lastName"
                                 value={formData.lastName}
                                 onChange={handleChange}
-                                className="bg-white w-10/12 outline-none text-black ml-2 text-xl md:h-full "
+                                className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full "
                             />
                         </div>
                     </div>
@@ -83,18 +83,18 @@ export const Email = () => {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="Your email"
-                            className="bg-white outline-none w-10/12 text-black ml-2 text-xl md:h-full"
+                            className="bg-white outline-none w-10/12 text-black ml-2 text-md md:h-full"
                         />
                     </div>
-                    <div className="flex flex-col w-full p-2 border rounded-full bg-white text-xl md:w-1/3 md:h-16 ">
+                    <div className="flex flex-col w-full p-2 border rounded-full bg-white md:w-1/3 md:h-16 ">
                         <input
                             required
-                            type="number"
+                            type="text"
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
                             placeholder="Phone number"
-                            className="bg-white w-10/12 text-black outline-none ml-2 text-xl md:h-full"
+                            className="bg-white w-10/12 text-black outline-none ml-2 text-md md:h-full"
                         />
                     </div>
                     <div className="p-2 border rounded-2xl bg-white md:pb-10">
@@ -106,12 +106,12 @@ export const Email = () => {
                             value={formData.message}
                             onChange={handleChange}
                             placeholder="How we can help?"
-                            className="w-full p-2 bg-white text-black outline-none text-xl"
+                            className="w-full p-2 bg-white text-black outline-none text-md"
                         ></textarea>
                     </div>
                     <button
                         type="submit"
-                        className="fancy rounded-full bg-blueSubmit text-white py-2 px-4 relative overflow-hidden border-none h2 md:h-16 md:mt-6"
+                        className="fancy rounded-full bg-blueSubmit text-white py-3 px-4 relative overflow-hidden border-none h2 md:h-16 md:mt-6"
                     >
                         <span className="relative z-10 md:text-xl">Submit</span>
                     </button>
