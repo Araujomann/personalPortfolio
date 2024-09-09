@@ -1,9 +1,14 @@
 import js from "../../assets/js.png";
 import next from "../../assets/next.svg";
 import react from "../../assets/react.svg";
-export const About = () => {
+
+interface Props {
+    id: string;
+}
+
+export const About:React.FC<Props> = ({id}) => {
     return (
-        <div className="relative flex flex-col w-11/12 items-center bg-bege py-6 md:h-208 md:w-10/12">
+        <div id={id} className="relative flex flex-col w-11/12 items-center bg-bege py-6 md:h-208 md:w-10/12">
             <div className="relative  w-full ">
                 <h1 className="relative left-2 font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
                     APAIXONADO
@@ -20,11 +25,11 @@ export const About = () => {
             </div>
 
             <div className=" flex flex-col pt-6 w-full gap-5 text-center">
-                <div className=" flex items-center">
+                <div className="flex items-center">
                     <img src={react} alt="js logo" className="w-20  ml-4 md:w-32"/>
                     <p className="text-black w-40 mx-auto font-silks text-[10px] md:text-[16px] md:w-60">
                         Minha carreira na programação iniciou quando entrei no
-                        curso de ciência da computação no IFMA, no inicío de
+                        curso de ciência da computação no IFMA, no início de
                         2022.
                     </p>
                 </div>

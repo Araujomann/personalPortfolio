@@ -54,7 +54,7 @@ export const Email = () => {
                         <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 ">
                             <input
                                 required
-                                placeholder="First name"
+                                placeholder="Nome"
                                 type="text"
                                 name="firstName"
                                 value={formData.firstName}
@@ -65,7 +65,7 @@ export const Email = () => {
                         <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 ">
                             <input
                                 required
-                                placeholder="Last name"
+                                placeholder="Sobrenome"
                                 type="text"
                                 name="lastName"
                                 value={formData.lastName}
@@ -82,7 +82,7 @@ export const Email = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder="Your email"
+                            placeholder="Seu email"
                             className="bg-white outline-none w-10/12 text-black ml-2 text-md md:h-full"
                         />
                     </div>
@@ -93,7 +93,7 @@ export const Email = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder="Phone number"
+                            placeholder="Número do celular"
                             className="bg-white w-10/12 text-black outline-none ml-2 text-md md:h-full"
                         />
                     </div>
@@ -105,7 +105,7 @@ export const Email = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder="How we can help?"
+                            placeholder="Como podemos lhe ajudar?"
                             className="w-full p-2 bg-white text-black outline-none text-md"
                         ></textarea>
                     </div>

@@ -2,10 +2,13 @@ import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { Header } from "../index";
 import myPhoto  from "../../assets/myPhoto.png";
 
+interface Props {
+    id: string;
+}
 
-export const Hero = () => {
+export const Hero:React.FC<Props> = ({id}) => {
     return (
-        <div className="z-10 relative bg-bege w-11/12 mt-4 mb-8 h-128 flex justify-center md:h-192 md:w-full xl:h-208 2xl:h-256">
+        <div id={id} className="z-10 relative bg-bege w-11/12 mt-4 mb-8 h-128 flex justify-center md:h-192 md:w-full xl:h-208 2xl:h-256">
             <Header />
             <h2 className="absolute text-black flex items-end  text-lg font-fjalla h-8 mt-24 mx-auto  font-bold md:text-3xl md:mt-32 xl:mt-28 ">
                 OLÁ, EU SOU O LUCAS!
@@ -25,10 +28,10 @@ export const Hero = () => {
             </h1>
 
             <div className="z-10 absolute bottom-2 right-2 md:top-8 md:right-6 flex md:flex-col md:items-center">
-                <span className="">
+                <span id="instagram-icon" className="icon">
                     <IoLogoInstagram color="black" size={40} />
                 </span>
-                <span className="">
+                <span id="linkedin-icon" className="icon">
                     <IoLogoLinkedin color="black" size={40} />
                 </span>
             </div>

@@ -17,11 +17,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 @property --rotate {
     syntax: "<angle>";
     inherits: false;
     initial-value: 0deg;
 }
+
 
 .fancy {
     position: relative;
@@ -88,6 +93,7 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
 }
+
 button:hover {
     border-color: #646cff;
 }

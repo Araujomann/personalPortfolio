@@ -5,30 +5,27 @@ export default {
     theme: {
         extend: {
             width: {
-                '128': '32rem', // 512px
-                '144': '36rem', // 576px
-                '160': '40rem', // 640px
-              },
-              height: {
-                '128': '32rem', // 512px
-                '144': '36rem', // 576px
-                '160': '40rem', // 640px
-              },
-             fontSize: {    
-                '10xl': '10rem',
-                '11xl': '11rem',
-             },
+                128: "32rem", // 512px
+                144: "36rem", // 576px
+                160: "40rem", // 640px
+            },
+            height: {
+                128: "32rem", // 512px
+                144: "36rem", // 576px
+                160: "40rem", // 640px
+            },
+            fontSize: {
+                "10xl": "10rem",
+                "11xl": "11rem",
+            },
             backgroundImage: {
-                'conic-gradient': 'conic-gradient(from 0deg at 50% 50%, red, yellow, green, blue, red)',
-                'gradient-to-t': 'linear-gradient(to top, #EAE6DC , #EAE6DC)',
-              },
+                "conic-gradient":
+                    "conic-gradient(from 0deg at 50% 50%, red, yellow, green, blue, red)",
+                "gradient-to-t": "linear-gradient(to top, #EAE6DC , #EAE6DC)",
+            },
 
-            keyframes: {
-                
-            },
-            animation: {
-               
-            },
+            keyframes: {},
+            animation: {},
             fontFamily: {
                 sans: ["New Amsterdam", "Roboto", "sans-serif"],
                 serif: ["DM Serif Text", "sans-serif"],
@@ -44,7 +41,6 @@ export default {
                 greenTitle: "#0B6353",
                 blueImageProject: "#0250c5",
                 yellowJs: "#f0db4f",
-                grayNext: "#B0B0B0",
                 blueSubmit: "#007BFF",
             },
             height: {
