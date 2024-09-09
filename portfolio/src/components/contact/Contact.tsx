@@ -4,7 +4,7 @@ import { Email } from "../index";
 export const Contact = () => {
     return (
         <div className="flex flex-col relative w-11/12 mb-4 mt-4 gap-12 md:w-10/12 md:h-256 md:gap-20">
-            <div className="flex flex-col relative bg-orange-300">
+            <div className="flex flex-col relative ">
                 <h1 className="relative font-anton text-greenTitle text-4xl md:text-6xl 2xl:text-7xl">
                     Tem uma ideia?
                 </h1>

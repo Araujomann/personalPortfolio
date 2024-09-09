@@ -20,8 +20,8 @@ export const Hero = () => {
                 className="z-10 absolute h-30 w-30 mt-44 brightness-90 xl:mt-36 2xl:mt-3 "
                 src={myPhoto}
             />
-            <h1 className="z-20 absolute flex font-anton text-7xl  text-greenTitle top-2/3 h-14 left-4 line tracking-tighter md:text-9xl 2xl:text-11xl">
-                DEVELOPER <span className=" xl:ml-16">&lt;/&gt;</span>
+            <h1 className="z-20 absolute flex items-center font-anton text-7xl  text-greenTitle top-2/3 h-14 left-4 line tracking-tighter md:text-9xl 2xl:text-11xl">
+                DEVELOPER <span className="ml-8 xl:ml-16 text-5xl ">&lt;/&gt;</span>
             </h1>
 
             <div className="z-10 absolute bottom-2 right-2 md:top-8 md:right-6 flex md:flex-col md:items-center">
