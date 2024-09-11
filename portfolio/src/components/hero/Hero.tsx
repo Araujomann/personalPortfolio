@@ -2,7 +2,7 @@ import { IoLogoInstagram, IoLogoLinkedin } from "react-icons/io";
 import { Header } from "../index";
 import myPhoto from "../../assets/myPhoto.png";
 import myPhotoMid from "../../assets/myPhoto5.png";
-import myPhotoLarge from "../../assets/myPhoto4.png";
+import myPhotoLarge from "../../assets/myPhoto7.png";
 
 interface Props {
   id: string;
