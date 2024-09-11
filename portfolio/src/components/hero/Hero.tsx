@@ -18,10 +18,10 @@ export const Hero: React.FC<Props> = ({ id }) => {
       <h2 className="absolute text-black flex items-end  text-lg font-fjalla h-8 mt-24 mx-auto  font-bold md:text-3xl md:mt-32 lg:mt-48 2xl:hidden">
         OLÁ, EU SOU O LUCAS!
       </h2>
-      <h1 className=" absolute font-anton text-7xl text-greenTitle mt-40  left-4 tracking-tighter md:text-9xl md:mt-72 lg:text-9xl lg:left-32 lg:mt-80 lg:top-6 xl:left-32 2xl:text-11xl 2xl:mt-64 2xl:top-0">
+      <h1 className=" absolute font-anton text-7xl text-greenTitle mt-40  left-4 tracking-tighter md:text-9xl md:mt-72 lg:text-9xl lg:left-32 lg:mt-80 lg:top-6 xl:left-32 2xl:text-11xl 2xl:mt-64 2xl:top-14">
         FRONT
       </h1>
-      <h1 className="z-20 absolute font-anton text-7xl  text-greenTitle mt-40 right-8 tracking-tighter md:text-9xl md:mt-72 md:mr-12 lg:text-9xl lg:right-40 lg:mt-80 lg:top-6 xl:right-36 2xl:text-11xl 2xl:mt-64 2xl:top-0 2xl:right-48">
+      <h1 className="z-20 absolute font-anton text-7xl  text-greenTitle mt-40 right-8 tracking-tighter md:text-9xl md:mt-72 md:mr-12 lg:text-9xl lg:right-40 lg:mt-80 lg:top-6 xl:right-36 2xl:text-11xl 2xl:mt-64 2xl:top-14 2xl:right-48">
         END
       </h1>
       <img
