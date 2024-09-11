@@ -74,9 +74,9 @@ export const Email: React.FC<Props> = ({ id }) => {
             <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 2xl:h-12">
               <input
                 required
-                placeholder="Nome"
+                placeholder="John"
                 type="text"
-                name="John"
+                name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
                 className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full"
@@ -85,9 +85,9 @@ export const Email: React.FC<Props> = ({ id }) => {
             <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 2xl:h-12">
               <input
                 required
-                placeholder="Sobrenome"
+                placeholder="Doe"
                 type="text"
-                name="Doe"
+                name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
                 className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full "
@@ -113,7 +113,7 @@ export const Email: React.FC<Props> = ({ id }) => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="(11) 99999-9999"
+              placeholder="(99) 99999-9999"
               className="bg-white w-10/12 text-black outline-none ml-2 text-md md:h-full"
             />
           </div>
