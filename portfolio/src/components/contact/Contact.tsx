@@ -37,7 +37,7 @@ export const Contact: React.FC<Props> = ({ id }) => {
   };
 
   return (
-    <div className="flex flex-col  relative w-10/12 mb-4 mt-4 gap-8 md:w-full md:h-240 2xl:w-9/12 2xl:h-224 2xl:mb-0">
+    <div className="flex flex-col  relative w-11/12 mb-4 mt-4 gap-8 md:w-full md:h-240 2xl:w-9/12 2xl:h-224 2xl:mb-0">
       <div className=" flex flex-col relative">
         <h1 className=" relative font-anton text-greenTitle text-4xl  md:text-6xl md:ml-30 2xl:text-7xl ">
           Tem uma ideia?
