@@ -8,15 +8,15 @@ interface Props {
 
 export const Testemonials: React.FC<Props> = ({ id }) => {
   return (
-    <div id={id} className="flex flex-col gap-2 w-11/12 md:w-10/12">
+    <div id={id} className="flex flex-col gap-2 w-11/12 md:w-full  2xl:w-9/12">
       <h1 className="font-anton text-4xl text-greenTitle md:text-6xl 2xl:text-7xl">
         O que as pessoas dizem sobre mim
       </h1>
-      <div className=" flex h-44 gap-6 overflow-auto overflow-y-hidden mt-4 md:h-96  ">
-        <div className=" flex gap-4 min-w-full pr-2">
+      <div className=" flex h-44 gap-6 overflow-auto overflow-y-hidden mt-4 md:h-64 ">
+        <div className=" flex gap-4 min-w-full ">
           <img src={guiPhoto} className="" />
           <section className="flex flex-col text-black gap-4 h-full justify-center">
-            <p className="text-[#606060] font-sans text-xs md:text-xl overflow-auto">
+            <p className="text-[#606060] font-sans text-xs md:text-lg  overflow-auto lg:w-5/6">
               Tive o prazer de trabalhar ao lado do Lucas durante alguns meses e
               posso dizer com certeza que ele é um dev excepcional! Sempre sendo
               um colega muito proativo e habilidoso, ele desempenhou papéis
@@ -35,7 +35,7 @@ export const Testemonials: React.FC<Props> = ({ id }) => {
         <div className="flex gap-4 min-w-full ">
           <img src={carlPhoto} className="" />
           <section className="flex flex-col text-black gap-4 h-full justify-center">
-            <p className="text-[#606060] font-sans text-xs  md:text-xl">
+            <p className="text-[#606060] font-sans text-xs  md:text-xl lg:w-5/6">
               Lucas se destacou como uma pessoa de fácil aprendizado, entendendo
               rapidamente como funciona a dinâmica das ferramentas da SuperViz e
               implementando soluções com elas.
@@ -54,7 +54,7 @@ export const Testemonials: React.FC<Props> = ({ id }) => {
         <div className="flex gap-4 min-w-full ">
           <img src={gustaPhoto} className="" />
           <section className="flex flex-col text-black gap-4 h-full justify-center">
-            <p className="text-[#606060] font-sans text-xs  md:text-xl">
+            <p className="text-[#606060] font-sans text-xs  md:text-xl lg:w-5/6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium, molestias ratione repellendus quasi natus nam et modi
               quod id totam alias iste dolorem quas iure quam.
