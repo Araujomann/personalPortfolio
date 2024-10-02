@@ -1,5 +1,5 @@
 import js from "../../assets/js.png";
-import next from "../../assets/next.svg";
+import node from "../../assets/node.png";
 import react from "../../assets/react.svg";
 
 interface Props {
@@ -41,9 +41,9 @@ export const About: React.FC<Props> = ({ id }) => {
         </div>
         <div className="flex items-center">
           <img
-            src={next}
-            alt="js logo"
-            className="w-24  ml-4  md:w-32 md:ml-12 lg:ml-32 2xl:ml-64"
+            src={node}
+            alt="node logo"
+            className="w-20  ml-4  md:w-32 md:ml-12 lg:ml-32 2xl:ml-64"
           />
           <p className="text-black w-48 mx-auto font-silks text-[10px] md:text-[16px] md:w-60 2xl:text-[12px]">
             Entrei na empresa júnior do ifma, que nasceu da minha turma, e tive a
