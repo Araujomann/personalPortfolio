@@ -1,4 +1,4 @@
-export const Header = () => {
+export const Header:React.FC = () => {
   return (
     <>
       <ul
@@ -24,7 +24,7 @@ export const Header = () => {
         <li className="hover:cursor-pointer">
           <a
             className=" text-black visited:text-black no-underline hover:text-black"
-            href="#testemonial"
+            href="#testimonial"
           >
             depoimentos
           </a>
