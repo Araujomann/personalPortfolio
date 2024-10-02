@@ -36,7 +36,7 @@ export const About: React.FC<Props> = ({ id }) => {
           />
           <p className="text-black w-40 mx-auto font-silks text-[10px] md:text-[16px] md:w-60 2xl:text-[12px]">
             Minha carreira na programação iniciou quando entrei no curso de
-            ciência da computação no IFMA, no início de 2022.
+            ciência da computação, no IFMA, no início de 2022.
           </p>
         </div>
         <div className="flex items-center">
@@ -46,9 +46,9 @@ export const About: React.FC<Props> = ({ id }) => {
             className="w-24  ml-4  md:w-32 md:ml-12 lg:ml-32 2xl:ml-64"
           />
           <p className="text-black w-48 mx-auto font-silks text-[10px] md:text-[16px] md:w-60 2xl:text-[12px]">
-            Entrei na empresa júnior do ifma, que nasceu da minha turma e tive a
-            opourtunidade de ser lider do grupo de front-end, organizando o
-            roteiro de estudos e ajudando os demais membros com dúvidas que
+            Entrei na empresa júnior do ifma, que nasceu da minha turma, e tive a
+            opourtunidade de ser lider do grupo de estudo de front-end, organizando o
+            roteiro e ajudando os demais membros com dúvidas que
             surgiam.
           </p>
         </div>
@@ -60,7 +60,7 @@ export const About: React.FC<Props> = ({ id }) => {
             className="w-20 ml-4  md:w-32 md:ml-12 lg:ml-32 2xl:ml-64"
           />
           <p className="text-black w-40 mx-auto font-silks text-[10px] md:text-[16px] md:w-60 2xl:text-[12px]">
-            deixei a empresa júnior quando consegui minha primeira vaga de
+            deixei a empresa júnior quando consegui minha primeira oportunidade de
             emprego.
           </p>
         </div>
