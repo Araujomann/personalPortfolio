@@ -52,14 +52,14 @@ export const Hero: React.FC<Props> = ({ id }) => {
             </h1>
 
             <div className=" z-10 absolute flex bottom-2 right-2     ">
-                <a href="https://www.instagram.com/el.lucasl/">
+                <a href="https://www.instagram.com/el.lucasl/" target="_blank">
                     <span id="instagram-icon" className="icon">
                         <IoLogoInstagram color="black" size={48} />
                     </span>
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/lucas-ara%C3%BAjo-4b3316226/
-        "
+                    href="https://www.linkedin.com/in/lucas-ara%C3%BAjo-4b3316226/"
+                    target="_blank"
                 >
                     <span id="linkedin-icon" className="icon">
                         <IoLogoLinkedin color="black" size={48} />
