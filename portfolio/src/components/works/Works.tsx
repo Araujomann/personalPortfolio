@@ -25,7 +25,7 @@ export const Works: React.FC<Props> = ({ id }) => {
                 {/* Trivia */}
                 <div className="absolute top-4 w-1/3 right-2 lg:right-12 xl:right-0 flex flex-col items-center">
                     <a
-                        className="text-xl text-black font-bold text-center font-sans md:text-2xl"
+                        className="text-xl text-black font-bold   text-center font-sans md:text-2xl"
                         target="_blank"
                         href="https://trivia3.vercel.app/"
                     >
@@ -37,26 +37,23 @@ export const Works: React.FC<Props> = ({ id }) => {
                 </div>
 
                 {/* Cocktail Genius */}
-                <div className="absolute top-24 w-1/3 lg:left-12 xl:left-0  flex flex-col items-center">
+                <div className="absolute top-1/2 -translate-y-1/2  w-1/3 left-6 lg:left-0 xl:right-0 flex flex-col items-center">
                     <a
-                        className="text-xl text-black font-bold text-center font-sans md:text-2xl"
+                        className="text-xl text-black font-bold  text-center font-sans md:text-2xl"
                         target="_blank"
                         href="https://cocktail-app2.vercel.app/"
                     >
-                        <div className="w-40 h-auto flex justify-center items-center md:w-52 md:h-36 lg:w-64 lg:h-40 xl:w-72 xl:h-44 2xl:w-80 2xl:h-48">
+                        <div className="bg-black rounded-2xl w-36 h-32 flex justify-center items-center md:h-44 md:w-48 lg:h-52 lg:w-60 ">
                             <img src={projectOne} className="w-3/4 h-auto" />
                         </div>
-                        <p className="border-r-blue-400 pt-3 xl:pt-4 xl+:pt-5">
-
                         Cocktail Genius
-                        </p>
                     </a>
                 </div>
 
                 {/* Buddio */}
                 <div className="absolute bottom-0  w-1/3 right-4 md:top-52 md:right-40 lg:top-64 lg:right-64 xl:left-1/2 xl:-translate-x-1/2 flex flex-col items-center">
                     <a
-                        className="text-xl text-black font-bold text-center font-sans md:text-2xl"
+                        className="text-xl text-black rounded-full font-bold text-center font-sans md:text-2xl"
                         target="_blank"
                         href="https://buddio.vercel.app/"
                     >
