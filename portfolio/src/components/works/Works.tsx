@@ -20,43 +20,50 @@ export const Works: React.FC<Props> = ({ id }) => {
                 durante minha vida acadêmica e profissional tive a oportunidade
                 de trabalhar com uma variedade de projetos.
             </p>
-            <div className="relative flex p-2 h-96 lg:h-128 mt-6 gap-2 md:mt-20 lg:mt-8  md:gap-8 xl:h-144 2xl:gap-16  2xl:h-192">
-                <div className="absolute flex flex-col top-4 right-2 lg:right-12  xl:right-28">
+            <div className="relative flex h-96  lg:h-128 mt-6  gap-2 md:mt-20 lg:mt-8 md:gap-8 xl:h-144 2xl:gap-16 2xl:h-192">
+               
+                {/* Trivia */}
+                <div className="absolute top-4 w-1/3 right-2 lg:right-12 xl:right-0 flex flex-col items-center">
                     <a
-                        className="text-xl text-black font-bold text-center h-full w-full font-sans md:text-2xl "
+                        className="text-xl text-black font-bold text-center font-sans md:text-2xl"
                         target="_blank"
                         href="https://trivia3.vercel.app/"
                     >
-                        <div className="bg-blueImageProject w-28 h-32 flex md:h-44 md:w-36 lg:h-52 lg:w-44 xl:w-48 xl:h-56">
-                            <img src={projectTwo} className=" w-36 mx-auto" />
+                        <div className="bg-blueImageProject w-28 h-32 flex justify-center items-center md:h-44 md:w-36 lg:h-52 lg:w-44 xl:w-48 xl:h-56">
+                            <img src={projectTwo} className="w-3/4 h-auto" />
                         </div>
                         Trivia
                     </a>
                 </div>
 
-                <div className="absolute flex flex-col h-fit top-24 lg:left-12 xl:left-28">
+                {/* Cocktail Genius */}
+                <div className="absolute top-24 w-1/3 lg:left-12 xl:left-0  flex flex-col items-center">
                     <a
                         className="text-xl text-black font-bold text-center font-sans md:text-2xl"
                         target="_blank"
-                        href="https://cocktail-app2.vercel.app/ "
+                        href="https://cocktail-app2.vercel.app/"
                     >
-                        <div className="bg-black w-40 flex md:w-52  md:h-36 lg:w-64 lg:h-40 xl:w-72 xl:h-44 2xl:w-80 2xl:h-48">
-                            <img src={projectOne} className=" w-36 mx-auto" />
+                        <div className="w-40 h-auto flex justify-center items-center md:w-52 md:h-36 lg:w-64 lg:h-40 xl:w-72 xl:h-44 2xl:w-80 2xl:h-48">
+                            <img src={projectOne} className="w-3/4 h-auto" />
                         </div>
+                        <p className="border-r-blue-400 pt-3 xl:pt-4 xl+:pt-5">
+
                         Cocktail Genius
+                        </p>
                     </a>
                 </div>
 
-                <div className="absolute flex text-center h-fit  bottom-0 right-4 md:top-52 md:right-40 lg:top-64 lg:right-64 xl:right-80 3xl:right-96 ">
+                {/* Buddio */}
+                <div className="absolute bottom-0  w-1/3 right-4 md:top-52 md:right-40 lg:top-64 lg:right-64 xl:left-1/2 xl:-translate-x-1/2 flex flex-col items-center">
                     <a
-                        className="text-xl text-black font-bold size-36 text-center font-sans md:text-2xl md:size-44 lg:size-52 xl:size-60"
+                        className="text-xl text-black font-bold text-center font-sans md:text-2xl"
                         target="_blank"
                         href="https://buddio.vercel.app/"
                     >
-                        <div className="bg-black size-full flex rounded-full">
+                        <div className="bg-black w-36 h-36 flex justify-center items-center rounded-full md:w-44 md:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60">
                             <img
                                 src={projetctThree}
-                                className="w-full h-full"
+                                className="w-full h-full rounded-full"
                             />
                         </div>
                         Buddio
