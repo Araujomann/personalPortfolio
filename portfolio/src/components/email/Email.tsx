@@ -61,7 +61,7 @@ export const Email: React.FC<Props> = ({ id }) => {
       className=" relative mx-auto flex flex-col  place-content-center w-full bg-gradient-to-t border gap-8 p-4 md:h-244 2xl:h-176 2xl:pb-11"
     >
       <div className="flex flex-col font-sans md:mb-6 2xl:mt-8">
-        <h1 className="text-black text-4xl font-bold md:text-6xl 2xl:text-7xl">
+        <h1 className="text-black text-4xl  font-bold md:text-6xl 2xl:text-7xl">
           Entre em contato
         </h1>
         <p className="text-[#6d6d6d]  text-xs font-bold md:text-2xl">
@@ -79,10 +79,10 @@ export const Email: React.FC<Props> = ({ id }) => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full"
+                className="bg-white w-10/12 outline-none text-sm font-silks tracking-tighter text-black ml-2 text-md md:h-full"
               />
             </div>
-            <div className="bg-white border p-2 rounded-full md:w-1/3 md:h-16 2xl:h-12">
+            <div className="bg-white border p-2 rounded-full  font-silks tracking-tighter md:w-1/3 md:h-16 2xl:h-12">
               <input
                 required
                 placeholder="Doe"
@@ -90,12 +90,12 @@ export const Email: React.FC<Props> = ({ id }) => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="bg-white w-10/12 outline-none text-black ml-2 text-md md:h-full "
+                className="bg-white w-10/12 outline-none text-sm text-black ml-2 text-md md:h-full "
               />
             </div>
           </div>
 
-          <div className="flex flex-col p-2 border rounded-full bg-white md:w-2/3 md:h-16 2xl:h-12">
+          <div className="flex flex-col p-2 border rounded-full  font-silks tracking-tighter  bg-white md:w-2/3 md:h-16 2xl:h-12">
             <input
               required
               type="email"
@@ -103,10 +103,10 @@ export const Email: React.FC<Props> = ({ id }) => {
               value={formData.email}
               onChange={handleChange}
               placeholder="johndoe@gmail.com"
-              className="bg-white outline-none w-10/12 text-black ml-2 text-md md:h-full"
+              className="bg-white outline-none w-10/12 text-sm text-black ml-2 text-md md:h-full"
             />
           </div>
-          <div className="flex flex-col w-full p-2 border rounded-full bg-white md:w-1/3 md:h-16 2xl:h-12">
+          <div className="flex flex-col w-full p-2 border font-silks text-sm tracking-tighter rounded-full bg-white md:w-1/3 md:h-16 2xl:h-12">
             <input
               required
               type="text"
@@ -114,7 +114,7 @@ export const Email: React.FC<Props> = ({ id }) => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="(99) 99999-9999"
-              className="bg-white w-10/12 text-black outline-none ml-2 text-md md:h-full"
+              className="bg-white w-10/12 text-black outline-none ml-2 text-sm md:h-full"
             />
           </div>
           <div className="p-2 border rounded-2xl bg-white ">
@@ -126,14 +126,14 @@ export const Email: React.FC<Props> = ({ id }) => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Como podemos lhe ajudar?"
-              className="w-full p-2 bg-white text-black outline-none text-md"
+              className="w-full p-2 bg-white text-black font-silks tracking-tighter outline-none text-sm"
             ></textarea>
           </div>
           <button
             type="submit"
             className="fancy rounded-full bg-blueSubmit text-white py-3 px-4 relative overflow-hidden border-none h2 md:h-16 md:mt-6 2xl:mt-0 2xl:"
           >
-            <span className="relative z-10 md:text-xl">Submit</span>
+            <span className="relative z-10 md:text-xl">Enviar</span>
           </button>
         </form>
       </div>

@@ -12,7 +12,7 @@ export const Testimonials: React.FC<Props> = ({ id }) => {
             className="flex flex-col gap-2 w-11/12 md:w-full  2xl:w-9/12"
         >
             <h1 className="font-anton text-4xl text-greenTitle md:text-6xl 2xl:text-7xl">
-                O que as pessoas dizem sobre mim
+                O QUE AS PESSOAS DIZEM SOBRE MIM
             </h1>
             <div className=" flex flex-col h-full gap-16 overflow-auto overflow-x-hidden mt-12  ">
                 <div className=" flex flex-col text-center gap-4 h-52 ">

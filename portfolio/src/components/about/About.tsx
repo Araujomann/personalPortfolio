@@ -12,18 +12,18 @@ export const About: React.FC<Props> = ({ id }) => {
       id={id}
       className="relative flex flex-col w-11/12 items-center bg-bege py-6 md:h-208 md:w-full 2xl:h-176"
     >
-      <div className="relative  w-full ">
-        <h1 className="relative left-2 font-anton text-greenTitle text-4xl sm:left-20 md:left-14 md:text-6xl lg:left-28 2xl:text-7xl 2xl:left-44 2xl:ml-1">
+      <div className="relative w-full">
+        <h1 className="relative left-2 font-anton text-greenTitle text-4xl sm:left-20 md:left-14 md:text-6xl lg:left-28 lg:text-7xl 2xl:text-7xl 2xl:left-44 2xl:ml-1">
           APAIXONADO
         </h1>
 
-        <h1 className="relative  left-12 font-anton text-greenTitle text-4xl sm:left-44  md:text-6xl lg:left-72 2xl:text-7xl 2xl:left-96">
+        <h1 className="relative w-fit left-12 font-anton text-greenTitle text-4xl sm:left-44  md:text-6xl lg:left-72 2xl:text-7xl 2xl:left-96">
           PELO
         </h1>
 
-        <h1 className="relative  left-20 font-anton text-greenTitle text-4xl  sm:left-44 md:text-6xl lg:left-80 2xl:text-7xl 2xl:left-96">
-          {" "}
-          DESENVOLVIMENTO{" "}
+        <h1 className=" w-fit ml-10 font-anton text-greenTitle text-4xl  sm:ml-32 md:text-6xl lg:ml-56 lg:text-7xl 2xl:text-7xl 2xl:left-96">
+          
+          DESENVOLVIMENTO
         </h1>
       </div>
 
