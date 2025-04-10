@@ -3,14 +3,12 @@ import { Header } from "../index";
 import myPhoto from "../../assets/myPhotoSquare.png";
 import myPhotoMid from "../../assets/myPhotoRect.png";
 import myPhotoLarge from "../../assets/myphoto11almost.png";
-import { useState } from "react";
-
 interface Props {
   id: string;
 }
 
 export const Hero: React.FC<Props> = ({ id }) => {
-  const [grown, setGrown] = useState(false);
+
   return (
     <div
       id={id}
@@ -32,7 +30,7 @@ export const Hero: React.FC<Props> = ({ id }) => {
         alt="Lucas"
       />
       <img
-        className={`${grown ? "object-cover transition-transform duration-500 ease-in-out hover:scale-105" : ""} z-10 absolute h-30 w-30 mt-44 brightness-90 md:bottom-0  hidden md:block lg:hidden`}
+        className="object-cover transition-transform duration-500 ease-in-out hover:scale-105 z-10 absolute h-30 w-30 mt-44 brightness-90 md:bottom-0  hidden md:block lg:hidden"
         src={myPhotoMid}
         alt="Lucas"
       />
