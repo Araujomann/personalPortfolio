@@ -3,15 +3,12 @@ export default {
   content: ["./src/**/*.{html,js,ts,tsx}"],
 
   theme: {
-    
     extend: {
       screens: {
-        'xl+': '1400px',
-        '3xl': '1900px',
-  
-        
+        "xl+": "1400px",
+        "3xl": "1900px",
       },
-      
+
       width: {
         128: "32rem", // 512px
         144: "36rem", // 576px
