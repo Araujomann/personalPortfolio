@@ -32,16 +32,20 @@ export default {
       keyframes: {},
       animation: {},
       fontFamily: {
-        sans: ["New Amsterdam", "Roboto", "sans-serif"],
-        serif: ["DM Serif Text", "sans-serif"],
-        roboto: ["Roboto Condensed", "sans-serif"],
-        bebas: ["Bebas Neue", "sans-serif"],
-        anton: ["Anton", "sans-serif"],
-        fjalla: ["Fjalla One", "sans-serif"],
-        silks: ["Silkscreen", "sans-serif"],
-        satisfy: ["Satisfy", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        // Maintaining aliases mapped to Inter for backward compatibility during migration
+        serif: ["Inter", "sans-serif"],
+        roboto: ["Inter", "sans-serif"],
+        bebas: ["Inter", "sans-serif"],
+        anton: ["Inter", "sans-serif"],
+        fjalla: ["Inter", "sans-serif"],
+        silks: ["Inter", "sans-serif"],
+        satisfy: ["Inter", "sans-serif"],
       },
       colors: {
+        background: "#F9FAFB", // light gray neutral
+        foreground: "#111827", // almost black
+        primary: "#0B6353",
         bege: "#EAE6DC",
         greenTitle: "#0B6353",
         blueImageProject: "#0250c5",

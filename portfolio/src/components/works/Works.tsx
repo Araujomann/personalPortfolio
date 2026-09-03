@@ -1,6 +1,7 @@
 import projectOne from "../../assets/project-1.png";
 import projectTwo from "../../assets/project-2.png";
 import projetctThree from "../../assets/project-3.png";
+import { motion } from "framer-motion";
 
 interface Props {
   id: string;
@@ -8,61 +9,77 @@ interface Props {
 
 export const Works: React.FC<Props> = ({ id }) => {
   return (
-    <div
-      id={id}
-      className="relative flex h-fit flex-col  w-11/12  md:h-160  md:mt-16 lg:mt-12 xl:mt-0 2xl:w-9/12"
-    >
-      <h1 className="relative w-full z-10 left-0 top-0 mb-3 font-anton text-greenTitle md:text-8xl">
-        PROJETOS
-      </h1>
+    <section id={id} className="w-[90%] md:w-full flex-col mt-12 md:mt-24 max-w-5xl">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+        <h1 className="font-black text-5xl md:text-7xl lg:text-8xl text-primary md:w-1/2">
+          PROJETOS
+        </h1>
+        <p className="text-gray-600 text-sm md:text-base md:w-1/3 leading-relaxed mt-4 md:mt-0 md:text-right">
+          Durante minha vida acadêmica e profissional tive a oportunidade de
+          trabalhar com uma variedade de projetos que aprimoraram minhas habilidades.
+        </p>
+      </div>
 
-      <p className="absolute right-0 top-0 text-black text-[8px] text-right tracking-tight font-silks w-36 md:text-[12px] md:w-44 md:right-8 md:top-1 xl:w-64 xl:top-0 xl:right-28 2xl:text-[12px] 2xl:w-80 2xl:mt-4 ">
-        durante minha vida acadêmica e profissional tive a oportunidade de
-        trabalhar com uma variedade de projetos.
-      </p>
-      <div className="relative flex h-96  lg:h-128 mt-6  gap-2 md:mt-20 lg:mt-8 md:gap-8 xl:h-144 2xl:gap-16 2xl:h-192">
-        {/* Trivia */}
-        <div className="absolute top-4 w-1/3 right-2 lg:right-12 xl:right-0 flex flex-col items-center">
-          <a
-            className="text-xl text-black font-bold   text-center font-sans md:text-2xl"
-            target="_blank"
-            href="https://trivia3.vercel.app/"
-          >
-            <div className="bg-blueImageProject w-28 h-32 flex justify-center items-center md:h-44 md:w-36 lg:h-52 lg:w-44 xl:w-48 xl:h-56">
-              <img src={projectTwo} className="w-3/4 h-auto" />
-            </div>
-            Trivia
-          </a>
-        </div>
-
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-8">
+        
         {/* Cocktail Genius */}
-        <div className="absolute top-1/2 -translate-y-1/2  w-1/3 left-6 lg:left-0 xl:right-0 flex flex-col items-center">
+        <motion.div 
+          className="flex flex-col group items-center"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
           <a
-            className="text-xl text-black font-bold  text-center font-sans md:text-2xl"
+            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
             target="_blank"
             href="https://cocktail-app2.vercel.app/"
+            rel="noreferrer"
           >
-            <div className="bg-black rounded-2xl w-36 h-32 flex justify-center items-center md:h-44 md:w-48 lg:h-52 lg:w-60 ">
-              <img src={projectOne} className="w-3/4 h-auto" />
+            <div className="bg-gray-900 rounded-2xl w-full max-w-[280px] h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
+              <img src={projectOne} alt="Cocktail Genius" className="w-[80%] h-auto object-contain transition-transform duration-500 group-hover:scale-110" />
             </div>
             Cocktail Genius
           </a>
-        </div>
+        </motion.div>
+
+        {/* Trivia */}
+        <motion.div 
+          className="flex flex-col group items-center md:pt-16"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          <a
+            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
+            target="_blank"
+            href="https://trivia3.vercel.app/"
+            rel="noreferrer"
+          >
+            <div className="bg-blueImageProject rounded-2xl w-full max-w-[280px] h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
+              <img src={projectTwo} alt="Trivia" className="w-[80%] h-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            Trivia
+          </a>
+        </motion.div>
 
         {/* Buddio */}
-        <div className="absolute bottom-0  w-1/3 right-4 md:top-52 md:right-40 lg:top-64 lg:right-64 xl:left-1/2 xl:-translate-x-1/2 flex flex-col items-center">
+        <motion.div 
+          className="flex flex-col group items-center lg:pt-32"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
           <a
-            className="text-xl text-black rounded-full font-bold text-center font-sans md:text-2xl"
+            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
             target="_blank"
             href="https://buddio.vercel.app/"
+            rel="noreferrer"
           >
-            <div className="bg-black w-36 h-36 flex justify-center items-center rounded-full md:w-44 md:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60">
-              <img src={projetctThree} className="w-full h-full rounded-full" />
+            <div className="bg-gray-100 rounded-full w-64 h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
+              <img src={projetctThree} alt="Buddio" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
             </div>
             Buddio
           </a>
-        </div>
+        </motion.div>
+
       </div>
-    </div>
+    </section>
   );
 };

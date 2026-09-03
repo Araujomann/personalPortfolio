@@ -15,7 +15,7 @@ export const About: React.FC<Props> = ({ id }) => {
     "Entrei na empresa júnior do IFMA, que nasceu da minha turma, e tive a oportunidade de ser líder do grupo de estudo de front-end.";
   const text3 =
     "Deixei a empresa júnior quando consegui minha primeira oportunidade de emprego.";
-    
+
   return (
     <section
       id={id}
@@ -34,7 +34,6 @@ export const About: React.FC<Props> = ({ id }) => {
       </div>
 
       <div className="flex flex-col w-full gap-8 md:gap-12 mt-8 md:pl-16">
-        
         <article className="flex flex-col md:flex-row items-center md:items-start gap-6 w-full max-w-3xl">
           <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
             <img src={react} alt="React logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
@@ -61,7 +60,6 @@ export const About: React.FC<Props> = ({ id }) => {
             <TypewriterAboutMe text={[text3]} />
           </div>
         </article>
-
       </div>
     </section>
   );
@@ -87,7 +85,7 @@ const TypewriterAboutMe: React.FC<{ text: string[] }> = ({ text }) => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {

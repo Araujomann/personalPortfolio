@@ -7,49 +7,47 @@ interface Props {
 
 export const Testimonials: React.FC<Props> = ({ id }) => {
   return (
-    <div id={id} className="flex flex-col gap-2 w-11/12 md:w-full  2xl:w-9/12">
-      <h1 className="font-anton text-4xl text-greenTitle md:text-6xl 2xl:text-7xl">
+    <section id={id} className="w-[90%] md:w-full flex flex-col mt-12 md:mt-24 max-w-5xl">
+      <h1 className="font-black text-5xl md:text-7xl lg:text-8xl text-primary leading-tight md:w-3/4 mb-16">
         O QUE AS PESSOAS DIZEM SOBRE MIM
       </h1>
-      <div className=" flex flex-col h-full gap-16 overflow-auto overflow-x-hidden mt-12  ">
-        <div className=" flex flex-col text-center gap-4 h-52 ">
-          <img src={guiPhoto} className="size-24 rounded-full mx-auto" />
-          <section className="flex flex-col text-black gap-2 h-full justify-center">
-            <p className="text-[#606060] font-sans mx-auto text-sm md:text-lg  overflow-auto lg:w-5/6">
-              Tive o prazer de trabalhar ao lado do Lucas durante alguns meses e
+      
+      <div className="flex flex-col gap-16 md:gap-24">
+        
+        <article className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12">
+          <img src={guiPhoto} alt="Guilherme Rillei" className="w-24 h-24 rounded-full object-cover shadow-sm ring-4 ring-gray-50" />
+          <div className="flex flex-col text-center md:text-left">
+            <p className="text-gray-600 text-base md:text-lg italic leading-relaxed max-w-3xl">
+              "Tive o prazer de trabalhar ao lado do Lucas durante alguns meses e
               posso dizer com certeza que ele é um dev excepcional! Sempre sendo
               um colega muito proativo e habilidoso, ele desempenhou papéis
               muito importantes para o processo dos projetos em que trabalhamos
-              juntos.
+              juntos."
             </p>
-            <div className="flex flex-col">
-              <h3 className="font-sans text-black text-lg">Guilherme Rillei</h3>
-              <p className="font-sans text-[#878787] text-sm">
-                Dev Pleno e Freelancer
-              </p>
+            <div className="mt-6">
+              <h3 className="font-bold text-gray-900 text-lg">Guilherme Rillei</h3>
+              <p className="text-gray-500 text-sm">Dev Pleno e Freelancer</p>
             </div>
-          </section>
-        </div>
-        <div className="h-px bg-gray-300 w-full mt-8" />
-        <div className="flex flex-col text-center gap-4 min-w-full">
-          <img src={carlPhoto} className="size-24 rounded-full mx-auto" />
-          <section className="flex flex-col text-black gap-2 h-full justify-center">
-            <p className="text-[#606060] font-sans mx-auto max-w-144 text-sm  md:text-xl lg:w-5/6">
-              Lucas se destacou como uma pessoa de fácil aprendizado, entendendo
+          </div>
+        </article>
+
+        <div className="h-px bg-gray-200 w-full" />
+
+        <article className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12">
+          <img src={carlPhoto} alt="Carlos Alessandro" className="w-24 h-24 rounded-full object-cover shadow-sm ring-4 ring-gray-50" />
+          <div className="flex flex-col text-center md:text-left">
+            <p className="text-gray-600 text-base md:text-lg italic leading-relaxed max-w-3xl">
+              "Lucas se destacou como uma pessoa de fácil aprendizado, entendendo
               rapidamente como funciona a dinâmica das ferramentas da SuperViz e
-              implementando soluções com elas.
+              implementando soluções com elas."
             </p>
-            <div className="flex flex-col">
-              <h3 className="font-sans text-black text-lg">
-                Carlos Alessandro
-              </h3>
-              <p className="font-sans text-[#878787] text-sm">
-                Dev Senior na SuperViz
-              </p>
+            <div className="mt-6">
+              <h3 className="font-bold text-gray-900 text-lg">Carlos Alessandro</h3>
+              <p className="text-gray-500 text-sm">Dev Senior na SuperViz</p>
             </div>
-          </section>
-        </div>
+          </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,43 +1,40 @@
 export const Header: React.FC = () => {
   return (
-    <>
-      <ul
-        className=" z-20 absolute flex place-content-center gap-4 bg-white mx-auto w-10/12 py-3 px-4 rounded-full mt-8 text-black
-    text-md font-sans md:w-6/12 md:h-16 md:text-xl md:gap-4 md:pt-5 md:px-6 lg:gap-10 2xl:gap-20"
-      >
-        <li className="hover:cursor-pointer hover:scale-125 hover:transition-all">
+    <nav className="z-50 fixed top-6 w-[90%] md:w-auto left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-full shadow-sm">
+      <ul className="flex items-center justify-center gap-4 text-sm font-medium text-gray-700 md:text-base md:gap-8 min-w-max">
+        <li>
           <a
-            className="text-black visited:text-black no-underline hover:text-black"
+            className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
             href="#works"
           >
             projetos
           </a>
         </li>
-        <li className="hover:cursor-pointer hover:scale-125 hover:transition-all">
+        <li>
           <a
-            className="text-black visited:text-black no-underline hover:text-black"
+            className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
             href="#about"
           >
             sobre
           </a>
         </li>
-        <li className="hover:cursor-pointer hover:scale-125 hover:transition-all">
+        <li>
           <a
-            className=" text-black visited:text-black no-underline hover:text-black"
+            className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
             href="#testimonial"
           >
             depoimentos
           </a>
         </li>
-        <li className="hover:cursor-pointer hover:scale-125 hover:transition-all">
+        <li>
           <a
-            className="text-black visited:text-black no-underline hover:text-black"
+            className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
             href="#contact"
           >
             contato
           </a>
         </li>
       </ul>
-    </>
+    </nav>
   );
 };
