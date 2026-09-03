@@ -4,5 +4,5 @@ export { Works } from "./works";
 export { About } from "./about";
 export { Contact } from "./contact";
 export { Email } from "./email";
-export { Testimonials } from "./testimonials";
+export { Recommendations } from "./recommendations";
 export { SentModal } from "./sentModal";

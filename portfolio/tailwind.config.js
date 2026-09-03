@@ -1,14 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,ts,tsx}"],
-
   theme: {
     extend: {
       screens: {
         "xl+": "1400px",
         "3xl": "1900px",
       },
-
       width: {
         128: "32rem", // 512px
         144: "36rem", // 576px
@@ -28,51 +26,53 @@ export default {
           "conic-gradient(from 0deg at 50% 50%, red, yellow, green, blue, red)",
         "gradient-to-t": "linear-gradient(to top, #EAE6DC , #EAE6DC)",
       },
-
-      keyframes: {},
-      animation: {},
+      keyframes: {
+        blink: {
+          "50%": { opacity: "0" },
+        },
+        typingBounce: {
+          "0%, 60%, to": { opacity: "0.4", transform: "translateY(0)" },
+          "30%": { opacity: "1", transform: "translateY(-3px)" },
+        },
+      },
+      animation: {
+        blink: "blink 1s step-end infinite",
+        typingBounce: "typingBounce 1s ease-in-out infinite",
+      },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        // Maintaining aliases mapped to Inter for backward compatibility during migration
-        serif: ["Inter", "sans-serif"],
-        roboto: ["Inter", "sans-serif"],
-        bebas: ["Inter", "sans-serif"],
-        anton: ["Inter", "sans-serif"],
-        fjalla: ["Inter", "sans-serif"],
-        silks: ["Inter", "sans-serif"],
-        satisfy: ["Inter", "sans-serif"],
+        sans: ["var(--font-geist-sans)", "Geist", "Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
+        mono: ["var(--font-jetbrains-mono)", "JetBrains Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
       },
       colors: {
-        background: "#F9FAFB", // light gray neutral
-        foreground: "#111827", // almost black
-        primary: "#0B6353",
-        bege: "#EAE6DC",
-        greenTitle: "#0B6353",
-        blueImageProject: "#0250c5",
-        yellowJs: "#f0db4f",
-        blueSubmit: "#007BFF",
+        background: "#050505",
+        foreground: "#e5e5e5",
+        primary: "#00a85a",
+        surface: "#111",
+        "surface-2": "#161616",
+        border: "#2e2e2e",
+        "border-strong": "#2a2a2a",
+        accent: "#00a85a",
+        "accent-dim": "#00a85a1f",
+        "accent-glow": "#00a85a4d",
+        "on-accent": "#001a0e",
+        text: "#e5e5e5",
+        "text-dim": "#6b6b6b",
+        "text-faint": "#4a4a4a",
+        "text-bright": "#fff",
       },
-      height: {
-        128: "32rem",
-        144: "36rem",
-        160: "40rem",
-        176: "44rem",
-        192: "48rem",
-        208: "52rem",
-        224: "56rem",
-        240: "60rem",
-        256: "64rem",
-        272: "68rem",
-        288: "72rem",
-        304: "76rem",
-        320: "80rem",
-        336: "84rem",
-        352: "88rem",
-        368: "92rem",
-        384: "96rem",
-        400: "100rem",
+      borderWidth: {
+        1: "1px",
+      },
+      boxShadow: {
+        card: "0 1px 0 rgb(255 255 255 / 0.05) inset",
+      },
+      dropShadow: {
+        glow: "0 0 10px rgb(0 168 90 / 0.3)",
+      },
+      spacing: {
+        "dot": "6px",
       },
     },
-    plugins: [],
   },
+  plugins: [],
 };

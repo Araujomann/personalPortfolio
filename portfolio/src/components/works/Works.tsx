@@ -1,6 +1,3 @@
-import projectOne from "../../assets/project-1.png";
-import projectTwo from "../../assets/project-2.png";
-import projetctThree from "../../assets/project-3.png";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -9,76 +6,138 @@ interface Props {
 
 export const Works: React.FC<Props> = ({ id }) => {
   return (
-    <section id={id} className="w-[90%] md:w-full flex-col mt-12 md:mt-24 max-w-5xl">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
-        <h1 className="font-black text-5xl md:text-7xl lg:text-8xl text-primary md:w-1/2">
-          PROJETOS
+    <section id={id} className="w-[90%] md:w-full mb-24">
+      {/* Header */}
+      <div className="mb-6">
+        <h1 className="font-black text-[rgb(var(--accent))] text-5xl md:text-6xl lg:text-7xl">
+          02 FEATURED WORK
         </h1>
-        <p className="text-gray-600 text-sm md:text-base md:w-1/3 leading-relaxed mt-4 md:mt-0 md:text-right">
-          Durante minha vida acadêmica e profissional tive a oportunidade de
-          trabalhar com uma variedade de projetos que aprimoraram minhas habilidades.
+        <p className="mt-2 text-[rgb(var(--text-dim))] text-sm">
+          Selected projects ~/projects/featured
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-8">
-        
-        {/* Cocktail Genius */}
-        <motion.div 
-          className="flex flex-col group items-center"
-          whileHover={{ y: -10 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      {/* Projects list */}
+      <div className="space-y-6">
+        {/* Project 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-4"
         >
-          <a
-            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
-            target="_blank"
-            href="https://cocktail-app2.vercel.app/"
-            rel="noreferrer"
-          >
-            <div className="bg-gray-900 rounded-2xl w-full max-w-[280px] h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
-              <img src={projectOne} alt="Cocktail Genius" className="w-[80%] h-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+          <div className="flex items-start gap-4">
+            <span className="font-mono text-[rgb(var(--accent))] text-base">
+              [01]
+            </span>
+            <div>
+              <h2 className="font-bold text-[rgb(var(--text))] text-lg">
+                Cocktail Genius
+              </h2>
+              <p className="mt-1 text-[rgb(var(--text-dim))] text-sm">
+                Crypto social trading platform with sub 100ms WebSocket price updates, live DMs, and bonding curve token trading. Built full-stack with React and Node.js.
+              </p>
+              <div className="mt-2 flex items-center gap-2">
+                <a
+                  href="https://cocktail-app2.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1 text-[rgb(var(--accent))] font-mono text-sm hover:underline"
+                >
+                  ↗ live
+                </a>
+                <span className="text-[rgb(var(--text-dim))] text-xs">
+                  2025 · Fullstack Engineer
+                </span>
+              </div>
             </div>
-            Cocktail Genius
-          </a>
+          </div>
         </motion.div>
 
-        {/* Trivia */}
-        <motion.div 
-          className="flex flex-col group items-center md:pt-16"
-          whileHover={{ y: -10 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        {/* Project 2 */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="flex flex-col gap-4"
         >
-          <a
-            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
-            target="_blank"
-            href="https://trivia3.vercel.app/"
-            rel="noreferrer"
-          >
-            <div className="bg-blueImageProject rounded-2xl w-full max-w-[280px] h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
-              <img src={projectTwo} alt="Trivia" className="w-[80%] h-auto object-contain transition-transform duration-500 group-hover:scale-110" />
+          <div className="flex items-start gap-4">
+            <span className="font-mono text-[rgb(var(--accent))] text-base">
+              [02]
+            </span>
+            <div>
+              <h2 className="font-bold text-[rgb(var(--text))] text-lg">
+                FudbalLive
+              </h2>
+              <p className="mt-1 text-[rgb(var(--text-dim))] text-sm">
+                Real time social football prediction app for friend groups. Led 3 engineers from scratch to live on both the App Store and Google Play.
+              </p>
+              <div className="mt-2 flex items-center gap-2">
+                <a
+                  href="https://trivia3.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1 text-[rgb(var(--accent))] font-mono text-sm hover:underline"
+                >
+                  ↗ live
+                </a>
+                <span className="text-[rgb(var(--text-dim))] text-xs">
+                  2023 · Frontend Lead
+                </span>
+              </div>
             </div>
-            Trivia
-          </a>
+          </div>
         </motion.div>
 
-        {/* Buddio */}
-        <motion.div 
-          className="flex flex-col group items-center lg:pt-32"
-          whileHover={{ y: -10 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        {/* Project 3 */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col gap-4"
         >
-          <a
-            className="flex flex-col items-center gap-4 text-xl font-bold text-gray-800 transition-colors group-hover:text-primary outline-none focus:ring-2 focus:ring-primary rounded-2xl p-2"
-            target="_blank"
-            href="https://buddio.vercel.app/"
-            rel="noreferrer"
-          >
-            <div className="bg-gray-100 rounded-full w-64 h-64 flex justify-center items-center shadow-lg overflow-hidden relative">
-              <img src={projetctThree} alt="Buddio" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+          <div className="flex items-start gap-4">
+            <span className="font-mono text-[rgb(var(--accent))] text-base">
+              [03]
+            </span>
+            <div>
+              <h2 className="font-bold text-[rgb(var(--text))] text-lg">
+                Skylead LinkedIn Automation
+              </h2>
+              <p className="mt-1 text-[rgb(var(--text-dim))] text-sm">
+                Reduced whitelabel build time from hours to minutes on Skylead, a LinkedIn automation SaaS with CSS variables, dark mode, and React Flow optimisations.
+              </p>
+              <div className="mt-2 flex items-center gap-2">
+                <a
+                  href="https://buddio.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1 text-[rgb(var(--accent))] font-mono text-sm hover:underline"
+                >
+                  ↗ live
+                </a>
+                <span className="text-[rgb(var(--text-dim))] text-xs">
+                  2021 · Frontend Developer
+                </span>
+              </div>
             </div>
-            Buddio
-          </a>
+          </div>
         </motion.div>
+      </div>
 
+      {/* Footer */}
+      <div className="mt-8 pt-4 border-t border-[rgb(var(--border))]">
+        <p className="text-[rgb(var(--text-dim))] text-sm font-mono">
+          $ ls -al /projects // list all projects
+        </p>
+        <div className="mt-2">
+          <a
+            href="#works"
+            className="flex items-center gap-2 text-[rgb(var(--accent))] font-mono text-sm hover:underline"
+          >
+            view all
+          </a>
+        </div>
       </div>
     </section>
   );
